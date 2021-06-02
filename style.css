@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#note {
+  width: 600px;
+  min-height: 300px;
+  margin: 50px auto;
+  border-radius: 20px;
+  border: 20px solid #000;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 10px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  font-size: 24px;
+  color: #a17c0e;
+  text-align: start;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.tasks, .right {
+  width: 50%;
+}
+
+.tasks, .add-panel {
+  margin-left: 10px;
+}
+
+input {
+  display: inline-block;
+}
+
+.add-panel {
+  position: relative;
+}
+
+.task {
+  width: 95%;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.task:focus {
+  outline: none;
+}
+
+.add {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 90px;
+  cursor: pointer;
+}
+.add:focus {
+  outline: none;
+}
+
+.popR, .popL {
+  display: none;
+  padding: 5px;
+  width: 250px;
+  background-color: lavenderblush;
+  position: relative;
+  margin: 0 auto;
+}
+.popR img, .popL img {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 230px;
+}
+.popR h3, .popL h3 {
+  color: pink;
+  font-weight: bold;
+  font-size: 18px;
+}
+.popR p, .popL p {
+  color: pink;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
